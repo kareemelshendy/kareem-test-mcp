@@ -1,4 +1,4 @@
-import { FAQItem, FaqsList, SectionTitle } from "@/components";
+import {  FaqsList, SectionTitle } from "@/components";
 import Link from "next/link";
 
 export default function Faqs() {

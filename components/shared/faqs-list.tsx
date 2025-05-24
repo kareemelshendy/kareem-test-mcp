@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FAQItem } from "./faq-item";
+import { AccordionItem } from "./accordion-item";
 
 interface Props {
   faqs: {
@@ -18,7 +18,7 @@ export const FaqsList = ({ faqs }: Props) => {
   return (
     <>
       {faqs.map((faq, idx) => (
-        <FAQItem
+        <AccordionItem
           key={idx}
           faqNumber={idx + 1}
           title={faq.title}

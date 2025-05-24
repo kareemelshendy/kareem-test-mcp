@@ -11,7 +11,7 @@ interface Props {
   handleToggle: () => void;
 }
 
-export const FAQItem = ({ faqNumber, title, desc, isOpen, handleToggle }: Props) => {
+export const AccordionItem = ({ faqNumber, title, desc, isOpen, handleToggle }: Props) => {
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     if (event.key === "Enter" || event.key === " ") {

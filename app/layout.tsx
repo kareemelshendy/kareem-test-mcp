@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat, Poppins ,Bowlby_One_SC} from "next/font/google";
 import "./globals.css";
 import { Footer, LoadingWrapper, Navbar } from "@/components";
 
@@ -19,6 +19,12 @@ const geistSans = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+const bowlbyOneSC = Bowlby_One_SC({
+  variable: "--font-bowlby-one-sc",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -59,7 +65,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${poppins.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${poppins.variable} ${bowlbyOneSC.variable} antialiased min-h-screen flex flex-col`}
       >
         <LoadingWrapper>
           <Navbar />

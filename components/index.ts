@@ -9,3 +9,7 @@ export { VideoSection } from "./home/video-section";
 export { LoadingWrapper } from "./loading-wrapper/loading-wrapper";
 export { SectionTitle } from "./shared/section-title";
 export { Flower } from "./shared/flower";
+export { Button } from "./shared/button";
+export { FAQItem } from "./shared/faq-item";
+export { FaqsList } from "./shared/faqs-list";
+export { HighlightedText } from "./shared/highlighted-text";

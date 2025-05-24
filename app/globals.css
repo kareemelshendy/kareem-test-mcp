@@ -15,6 +15,7 @@
   --radius: 30px;
   --font-montserrat: var(--font-montserrat);
   --font-poppins: var(--font-poppins);
+  --font-bowlby-one-sc: var(--font-bowlby-one-sc);
 }
 
 @theme inline {
@@ -25,6 +26,7 @@
   --font-poppins: var(--font-poppins);
   --radius-default: var(--radius);
   --font-grupi-sans: "Grupi Sans", sans-serif;
+  --font-bowlby-one-sc: var(--font-bowlby-one-sc);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,6 +38,7 @@
     --font-sans: var(--font-montserrat);
     --font-poppins: var(--font-poppins);
     --font-grupi-sans: "Grupi Sans", sans-serif;
+    --font-bowlby-one-sc: var(--font-bowlby-one-sc);
   }
 }
 

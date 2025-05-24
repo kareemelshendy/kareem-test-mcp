@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { BallIcon, BallWithoutThreadIcon } from "../icons";
+import { HighlightedText } from "../shared/highlighted-text";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -100,15 +101,17 @@ export const AboutSection = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         ref={sectionRef}
         aria-label="About Petzania section text"
         className= " text-[24px] lg:text-[28px] font-medium max-w-[974px] text-center mx-auto leading-relaxed"
       >
-        {/* Visually hidden for screen readers */}
+
         <span className="sr-only">{aboutText}</span>
         {renderAnimatedText(aboutText)}
-      </div>
+      </div> */}
+
+      <HighlightedText text={aboutText} />
     </section>
   );
 };

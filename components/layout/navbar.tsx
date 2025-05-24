@@ -15,8 +15,8 @@ export const Navbar = () => {
       path: "/our-services",
     },
     {
-      title: "FAQ",
-      path: "/faq",
+      title: "FAQs",
+      path: "/faqs",
     },
     {
       title: "Our Facilities",

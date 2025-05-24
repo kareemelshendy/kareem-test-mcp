@@ -1,5 +1,5 @@
 "use client";
-import { Flower, SectionTitle } from "@/components";
+import { Button, Flower, SectionTitle } from "@/components";
 import {
   FacebookIcon,
   InstaIcon,
@@ -73,7 +73,7 @@ const ContactFadeGroup = () => {
         className="flex items-center gap-[9px] mb-[16px]"
         aria-label="Phone contact"
       >
-        <span className="text-[30px]">
+        <span className="text-[20px] lg:text-[30px]">
           <PhoneIcon />
         </span>
         <Link
@@ -88,7 +88,7 @@ const ContactFadeGroup = () => {
         className="flex items-center gap-[9px] mb-[16px] lg:mb-[64px]"
         aria-label="WhatsApp contact"
       >
-        <span className="text-[30px]">
+        <span className="text-[20px] lg:text-[30px]">
           <WhatsappIcon />
         </span>
         <Link
@@ -152,7 +152,7 @@ const SocialsFadeGroup = () => {
       >
         <Link
           href="#"
-          className="text-[51px]"
+          className="text-[30px] lg:text-[51px]"
           aria-label="Instagram"
           tabIndex={0}
         >
@@ -160,7 +160,7 @@ const SocialsFadeGroup = () => {
         </Link>
         <Link
           href="#"
-          className="text-[51px]"
+          className="text-[30px] lg:text-[51px]"
           aria-label="Facebook"
           tabIndex={0}
         >
@@ -212,14 +212,16 @@ const MailFadeGroup = () => {
       <Link
         ref={mailRef}
         href="mailto:info@petzaniauae.com"
-        className="text-secondary text-[28px] font-medium mb-[24px] uppercase"
+        className="text-secondary text-[16px] lg:text-[28px] font-medium mb-[24px] uppercase"
       >
         info@petzaniauae.com
       </Link>
+
+      <Button label="Send message" onClick={() => {}} className="mb-[56px]" />
       <Flower />
       <p
         ref={messageRef}
-        className="text-secondary text-[28px] font-medium mb-[24px] uppercase max-w-[585px] text-center"
+        className="text-secondary text-[16px] lg:text-[28px] font-medium mb-[24px] uppercase max-w-[585px] text-center"
       >
         we cannot wait to hear from you! We're All Ears (and Tails)!
       </p>

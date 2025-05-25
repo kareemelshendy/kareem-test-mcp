@@ -5,6 +5,7 @@ import useMediaQuery from "@/hooks/media-query-observer.hook";
 
 export const GallerySection = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
+  
   return (
     <ImagesGallery
       showWoof={false}

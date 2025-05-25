@@ -6,9 +6,10 @@ import { ServicesSection } from "./components/services-section";
 export default async function FacilityPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const facility = await getFacilityById(parseInt(params.id));
+  const { id } = await params;
+  const facility = await getFacilityById(parseInt(id));
 
   return (
     <section className="py-[100px] lg:py-[150px]">

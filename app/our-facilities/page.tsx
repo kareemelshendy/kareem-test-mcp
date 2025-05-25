@@ -1,29 +1,10 @@
 import { HighlightedText, SectionTitle } from "@/components";
 import { FacilitiesCard } from "./components/facilities-card";
+import { getFacilities } from "@/api";
 
-export default function OurFacilities() {
-  const facilities = [
-    {
-      id: 1,
-      title: "The HOOD -Business Bay ",
-      location:
-        "DAMAC Executive Bay - Al A'amal St - Dubai - United Arab Emirates",
-      phone: "+971 58 828 3227",
-    },
-    {
-      id: 2,
-      title: "The retreat -DIP 2",
-      location:
-        "DAMAC Executive Bay - Al A'amal St - Dubai - United Arab Emirates",
-      phone: "+0283949272694",
-    },
-    {
-      id: 3,
-      title: "Mobile van",
-      location: "Anywhere in Dubai - United Arab Emirates",
-      phone: "+0283949272694",
-    },
-  ];
+export default async function OurFacilities() {
+  const facilities = await getFacilities();
+
   return (
     <section className="container py-[100px] lg:py-[175px]">
       <SectionTitle title="explore our three facilities" />

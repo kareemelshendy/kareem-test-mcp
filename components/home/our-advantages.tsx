@@ -4,6 +4,7 @@ import { ArrowIcon } from "../icons";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { SectionTitle } from "../shared/section-title";
+import { Flower } from "../shared/flower";
 
 export const OurAdvantages = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -140,19 +141,7 @@ export const OurAdvantages = () => {
         Because we don't just care for pets—we adore them! Here's why your furry
         friends will love us as much as you do:
       </p>
-      <div className="w-[100px] h-[90px] relative mb-[24px] lg:mb-[60px]">
-        <span ref={flowerRef} className="absolute inset-0">
-          <Image src="/images/flower-shape.svg" alt="Pet" fill />
-        </span>
-        <span
-          ref={arrowRef}
-          className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-[46px] text-primary"
-          aria-label="Arrow Icon"
-          tabIndex={0}
-        >
-          <ArrowIcon />
-        </span>
-      </div>
+      <Flower flowerClassName="#FFEDE2" />
 
       <div className="py-[30px]  grid grid-cols-1 lg:grid-cols-2 gap-[60px] md:gap-[100px] lg:gap-[60px] w-full">
         <div

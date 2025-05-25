@@ -1,0 +1,182 @@
+{
+  "facilities": [
+    {
+      "id": 1,
+      "title": "The HOOD -Business Bay ",
+      "description": "Our Business Bay branch, located in the heart of the city, offers grooming and daycare services and serves as a convenient hub for clients transferring to our other branches.",
+      "location": "DAMAC Executive Bay - Al A'amal St - Dubai - United Arab Emirates",
+      "phone": "+971 58 828 3227",
+      "services": [
+        {
+          "title": "Daycare",
+          "image": "/images/services/services-1.png",
+          "alt": "Dog Daycare",
+          "icon": "DogsIcon",
+          "thumbnailLabel": "Daycare",
+          "starsRotation": "rotate-0",
+          "items": [
+            {
+              "label": "Book Now",
+              "subTitle": "(Mini & small dogs only)",
+              "title": "Dog Daycare - Business Bay"
+            },
+            {
+              "label": "Book Now",
+              "title": "Dog Daycare - DIP 2"
+            }
+          ]
+        },
+        {
+          "title": "Grooming",
+          "image": "/images/services/services-4.png",
+          "alt": "Dog Grooming",
+          "icon": "CleanIcon",
+          "thumbnailLabel": "In-shop Grooming",
+          "starsRotation": "-rotate-[120deg]",
+          "items": [
+            {
+              "label": "Book Now",
+              "title": "Dog Grooming"
+            },
+            {
+              "label": "Book Now",
+              "title": "Cat Grooming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The retreat -DIP 2 ",
+      "description": "Our city center hub, located in Business Bay, is a testament to convenience without sacrificing the care your pet deserves.",
+      "location": "DAMAC Executive Bay - Al A'amal St - Dubai - United Arab Emirates",
+      "phone": "+0283949272694",
+      "services": [
+        {
+          "title": "Daycare",
+          "description": "Where play meets care, and tails never stop wagging.",
+          "image": "/images/services/services-1.png",
+          "alt": "Dog Daycare",
+          "items": [
+            {
+              "label": "Book Now",
+              "subTitle": "(Mini & small dogs only)",
+              "title": "Dog Daycare - Business Bay"
+            },
+            {
+              "label": "Book Now",
+              "title": "Dog Daycare - DIP 2"
+            }
+          ],
+          "icon": "DogsIcon",
+          "thumbnailLabel": "Daycare",
+          "starsRotation": "rotate-0"
+        },
+        {
+          "title": "Boarding",
+          "description": "A cozy retreat while you're away.",
+          "image": "/images/services/services-2.png",
+          "alt": "Dog Boarding",
+          "icon": "HomeIcon",
+          "thumbnailLabel": "Boarding",
+          "starsRotation": "-rotate-[145deg]",
+          "items": [
+            {
+              "label": "Book Now",
+              "title": "Dog Boarding"
+            }
+          ]
+        },
+        {
+          "title": "Training",
+          "description": "Turning good dogs into great companions.",
+          "image": "/images/services/services-3.png",
+          "alt": "Dog Training",
+          "icon": "TraningIcon",
+          "thumbnailLabel": "Training",
+          "starsRotation": "-rotate-[150deg]",
+          "items": [
+            {
+              "label": "Book Now",
+              "title": "Stay and Train"
+            },
+            {
+              "label": "Book Now",
+              "title": "Daycare and Train"
+            },
+            {
+              "label": "Book Now",
+              "title": "At Home Training"
+            }
+          ]
+        },
+        {
+          "title": "Grooming",
+          "description": "Because every pet deserves the star treatment.",
+          "image": "/images/services/services-4.png",
+          "alt": "Dog Grooming",
+          "icon": "CleanIcon",
+          "thumbnailLabel": "In-shop Grooming",
+          "starsRotation": "-rotate-[120deg]",
+          "items": [
+            {
+              "label": "Book Now",
+              "title": "Dog Grooming"
+            },
+            {
+              "label": "Book Now",
+              "title": "Cat Grooming"
+            }
+          ]
+        },
+        {
+          "title": "Mobile Grooming",
+          "description": "Because every pet deserves the star treatment from the comfort of their homes",
+          "image": "/images/services/services-5.png",
+          "alt": "Mobile Grooming",
+          "icon": "TruckIcon",
+          "thumbnailLabel": "Mobile Grooming",
+          "starsRotation": "-rotate-[120deg]",
+          "items": [
+            {
+              "label": "Book Now",
+              "title": "Dog Mobile Grooming"
+            },
+            {
+              "label": "Book Now",
+              "title": "Cat Mobile Grooming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mobile van",
+      "description": "Our mobile grooming van brings professional care right to your doorstep. Fully equipped with everything your pet needs for a refreshing grooming experience, it's the ultimate convenience for busy pet parents. Say goodbye to travel stress and hello to happy, freshly groomed pets!",
+      "location": "DAMAC Executive Bay - Al A'amal St - Dubai - United Arab Emirates",
+      "phone": "+0283949272694",
+      "services": [
+        {
+          "title": "Mobile Grooming",
+          "image": "/images/services/services-5.png",
+          "alt": "Mobile Grooming",
+          "icon": "TruckIcon",
+          "thumbnailLabel": "Mobile Grooming",
+          "starsRotation": "-rotate-[120deg]",
+          "items": [
+            {
+              "label": "Book Now",
+              "title": "Dog Mobile Grooming"
+            },
+            {
+              "label": "Book Now",
+              "title": "Cat Mobile Grooming"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

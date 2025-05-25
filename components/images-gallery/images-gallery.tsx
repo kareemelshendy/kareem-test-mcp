@@ -11,11 +11,12 @@ interface ImageItem {
 }
 
 interface Props {
-  title: string;
+  title?: string;
   images: ImageItem[];
+  showWoof?: boolean;
 }
 
-export const ImagesGallery = ({ title, images }: Props) => {
+export const ImagesGallery = ({ title, images, showWoof = true }: Props) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const animationRef = useRef<gsap.core.Tween | null>(null);
   const singleGalleryRef = useRef<HTMLDivElement | null>(null);
@@ -94,19 +95,18 @@ export const ImagesGallery = ({ title, images }: Props) => {
 
   return (
     <section ref={sectionRef} className="w-full py-8 relative">
-      <SectionTitle title={title} className="mb-[24px] lg:mb-[48px]" />
-      <div
-        ref={woofRef}
-        className="absolute right-[4%] top-[20%] lg:top-[7%] lg:right-[7%] z-10 w-[66px] h-[51px] lg:w-[165px] lg:h-[128px] opacity-0 scale-75"
-      >
-          <Image
-            src="/images/woof.svg"
-            alt="Petzania" 
-            fill
-          />
+      {title ? (
+        <SectionTitle title={title} className="mb-[24px] lg:mb-[48px]" />
+      ) : null}
+      {showWoof ? (
+        <div
+          ref={woofRef}
+          className="absolute right-[4%] top-[20%] lg:top-[7%] lg:right-[7%] z-10 w-[66px] h-[51px] lg:w-[165px] lg:h-[128px] opacity-0 scale-75"
+        >
+          <Image src="/images/woof.svg" alt="Petzania" fill />
         </div>
+      ) : null}
       <div className="w-full overflow-hidden pl-24 relative">
-       
         <div
           ref={containerRef}
           className="flex gap-[20px]"

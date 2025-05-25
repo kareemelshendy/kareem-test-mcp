@@ -4,9 +4,7 @@ import { ImagesGallery } from "../images-gallery/images-gallery";
 
 export const GallerySection = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
-
-
-  console.log(isMobile);
+  
   return (
     <section className=" mb-[40px] lg:mb-[100px]">
       <ImagesGallery

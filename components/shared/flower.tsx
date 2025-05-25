@@ -1,12 +1,22 @@
 "use client";
 
-import Image from "next/image";
-import { ArrowIcon } from "../icons";
+import { ArrowIcon, FlowerIcon } from "../icons";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-export const Flower = () => {
+
+interface Props {
+  wrapperClassName?: string;
+  flowerClassName?: string;
+  arrowClassName?: string;
+}
+
+export const Flower = ({
+  wrapperClassName,
+  flowerClassName,
+  arrowClassName,
+}: Props) => {
   const flowerRef = useRef<HTMLSpanElement>(null);
-  const arrowRef = useRef<HTMLSpanElement>(null);
+  const arrowRef = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
 
   useEffect(() => {
@@ -46,18 +56,25 @@ export const Flower = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="w-[100px] h-[90px] relative mb-[24px] lg:mb-[60px]">
-      <span ref={flowerRef} className="absolute inset-0">
-        <Image src="/images/flower-shape.svg" alt="Pet" fill />
-      </span>
+    <div
+      className={`w-[60px] h-[50px] lg:w-[100px] lg:h-[90px] relative mb-[24px] lg:mb-[60px] flex items-center justify-center ${wrapperClassName}`}
+    >
       <span
-        ref={arrowRef}
-        className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-[46px] text-primary"
-        aria-label="Arrow Icon"
-        tabIndex={0}
+        ref={flowerRef}
+        className={`absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[50px] lg:text-[90px] text-[#FFEDE2] ${flowerClassName}`}
       >
-        <ArrowIcon />
+        <FlowerIcon />
       </span>
+ 
+      <div ref={arrowRef} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div
+          className={`text-[22px] lg:text-[46px] text-primary ${arrowClassName}`}
+          aria-label="Arrow Icon"
+          tabIndex={0}
+        >
+          <ArrowIcon />
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,15 @@
-import { OurServices, GallerySection, AboutSection, OurAdvantages, VideoSection } from "@/components";
+import {
+  OurServices,
+  GallerySection,
+  AboutSection,
+  OurAdvantages,
+  VideoSection,
+} from "@/components";
 
 export default function Home() {
   return (
     <>
-    <VideoSection />
+      <VideoSection />
       <AboutSection />
       <OurServices />
       <GallerySection />

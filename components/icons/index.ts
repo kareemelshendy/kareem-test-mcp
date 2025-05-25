@@ -7,6 +7,7 @@ export { default as CloseIcon } from "./close-icon";
 export { default as DogsIcon } from "./dogs-icon";
 export { default as DownArrow } from "./down-arrow";
 export { default as FacebookIcon } from "./facebook-icon";
+export { default as FlowerIcon } from "./flower-icon";
 export { default as HeartIcon } from "./heart-icon";
 export { default as HomeIcon } from "./home-icon";
 export { default as InstaIcon } from "./insta-icon";
